@@ -4,6 +4,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { MatDividerModule, MatIconModule, MatToolbarModule, MatButtonModule, MatMenuModule, MatListModule } from '@angular/material';
+import { RouterModule } from '@angular/router';
 // import { FlexLayoutModule } from "@angular/flex-layout";
 
 @NgModule({
@@ -19,7 +20,8 @@ import { MatDividerModule, MatIconModule, MatToolbarModule, MatButtonModule, Mat
     MatIconModule,
     MatButtonModule,
     MatMenuModule,
-    MatListModule
+    MatListModule,
+    RouterModule
     // FlexLayoutModule
   ],
   exports: [
