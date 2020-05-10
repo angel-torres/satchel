@@ -1,0 +1,13 @@
+ul li {
+    list-style: none;
+}
+
+mat-toolbar-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+.header-right-container {
+    display: inline;
+}
