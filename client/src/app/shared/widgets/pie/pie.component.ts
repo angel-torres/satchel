@@ -23,7 +23,7 @@ export class PieComponent implements OnInit {
           type: 'pie'
       },
       title: {
-          text: 'Browser market shares in January, 2018'
+          text: 'Test Chart'
       },
       tooltip: {
           pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -32,6 +32,12 @@ export class PieComponent implements OnInit {
           point: {
               valueSuffix: '%'
           }
+      },
+      exporting: {
+        enabled: true
+      },
+      credits: {
+        enabled: false
       },
       plotOptions: {
           pie: {

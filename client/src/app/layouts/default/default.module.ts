@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { MatSidenavModule, MatDividerModule, MatCardModule } from '@angular/material';
 import { PostsComponent } from 'src/app/modules/posts/posts.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { DashboardService } from 'src/app/modules/dashboard.service';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,9 @@ import { SharedModule } from 'src/app/shared/shared.module';
     MatSidenavModule,
     MatDividerModule,
     MatCardModule
+  ],
+  providers: [
+    DashboardService
   ]
 })
 export class DefaultModule { }
