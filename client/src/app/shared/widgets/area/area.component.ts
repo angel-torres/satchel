@@ -27,7 +27,6 @@ export class AreaComponent implements OnInit {
         },
         tooltip: {
             split: true,
-            valueSuffix: ' millions'
         },
         credits: {
           enabled: false
