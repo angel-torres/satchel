@@ -25,4 +25,8 @@ export class DashboardService {
       data: [2, 2, 2, 6, 13, 30, 46]
     }]
   }
+
+  cards() {
+    return [71, 78, 36, 66]
+  }
 }
