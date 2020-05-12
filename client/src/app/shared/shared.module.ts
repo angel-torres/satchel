@@ -9,7 +9,8 @@ import { AreaComponent } from './widgets/area/area.component';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { CardComponent } from './widgets/card/card.component';
 import { PieComponent } from './widgets/pie/pie.component';
-import { TableComponent } from './widgets/table/table.component'
+import { TableComponent } from './widgets/table/table.component';
+import { PostCardComponent } from './posts/post-card/post-card.component'
 // import { FlexLayoutModule } from "@angular/flex-layout";
 
 @NgModule({
@@ -20,7 +21,8 @@ import { TableComponent } from './widgets/table/table.component'
     AreaComponent,
     CardComponent,
     PieComponent,
-    TableComponent
+    TableComponent,
+    PostCardComponent
   ],
   imports: [
     CommonModule,
@@ -41,7 +43,8 @@ import { TableComponent } from './widgets/table/table.component'
     AreaComponent,
     CardComponent,
     PieComponent,
-    TableComponent
+    TableComponent,
+    PostCardComponent
   ],
 })
 export class SharedModule { }
