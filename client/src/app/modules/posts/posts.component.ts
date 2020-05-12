@@ -8,11 +8,12 @@ import { PostsService } from '../posts.service';
 })
 export class PostsComponent implements OnInit {
 
-  data = [];
+  posts = [];
+
   constructor(private postsService:  PostsService) { }
 
   ngOnInit() {
-    this.data = this.postsService.posts()
+    this.posts = this.postsService.posts()
   }
 
 }
