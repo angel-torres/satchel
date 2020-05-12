@@ -10,6 +10,7 @@ export class DashboardComponent implements OnInit {
   bigChart = [];
   cards = [];
   pieChart = [];
+  table = [];
 
   constructor(private dashboardService: DashboardService) { }
 
@@ -17,6 +18,7 @@ export class DashboardComponent implements OnInit {
     this.bigChart = this.dashboardService.bigChart();
     this.cards = this.dashboardService.cards();
     this.pieChart = this.dashboardService.pieChart();
+    this.table = this.dashboardService.table();
   }
 
 }
