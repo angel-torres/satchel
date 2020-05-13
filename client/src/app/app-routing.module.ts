@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DefaultComponent } from './layouts/default/default.component';
 import { StatsComponent } from './modules/stats/stats.component';
-import { PostsComponent } from './modules/posts/posts.component';
+import { ArticlesComponent } from './modules/articles/articles.component';
 import { HomeComponent } from './modules/home/home.component';
 
 const routes: Routes = [{
@@ -10,13 +10,13 @@ const routes: Routes = [{
   component: DefaultComponent,
   children: [{
     path: '',
+    component: HomeComponent
+  },{
+    path: 'stats',
     component: StatsComponent
   },{
-    path: 'posts',
-    component: PostsComponent
-  },{
     path: 'articles',
-    component: HomeComponent
+    component: ArticlesComponent
   }]
 }];
 

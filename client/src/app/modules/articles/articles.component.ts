@@ -3,10 +3,10 @@ import { PostsService } from '../posts.service';
 
 @Component({
   selector: 'app-posts',
-  templateUrl: './posts.component.html',
-  styleUrls: ['./posts.component.scss']
+  templateUrl: './articles.component.html',
+  styleUrls: ['./articles.component.scss']
 })
-export class PostsComponent implements OnInit {
+export class ArticlesComponent implements OnInit {
 
   posts = [];
 
