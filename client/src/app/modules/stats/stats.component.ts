@@ -3,10 +3,10 @@ import { DashboardService } from '../dashboard.service';
 
 @Component({
   selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+  templateUrl: './stats.component.html',
+  styleUrls: ['./stats.component.scss']
 })
-export class DashboardComponent implements OnInit {
+export class StatsComponent implements OnInit {
   bigChart = [];
   cards = [];
   pieChart = [];

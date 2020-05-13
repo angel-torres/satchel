@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DefaultComponent } from './default.component';
-import { DashboardComponent } from 'src/app/modules/dashboard/dashboard.component';
+import { StatsComponent } from 'src/app/modules/stats/stats.component';
 import { RouterModule } from '@angular/router';
 import { MatSidenavModule, MatDividerModule, MatCardModule } from '@angular/material';
 import { PostsComponent } from 'src/app/modules/posts/posts.component';
@@ -12,7 +12,7 @@ import { ArticlesComponent } from 'src/app/modules/articles/articles.component';
 @NgModule({
   declarations: [
     DefaultComponent,
-    DashboardComponent,
+    StatsComponent,
     PostsComponent,
     ArticlesComponent
   ],
