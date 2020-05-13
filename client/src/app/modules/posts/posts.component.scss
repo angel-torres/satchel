@@ -1,0 +1,10 @@
+.posts-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+
+    mat-card {
+        max-width: 500px;
+    }
+}
+

@@ -1,4 +1,18 @@
-<p>
-  post-card works!
-  {{post.author}}
-</p>
+<h2>{{post.title}}</h2>
+<div class="article-image">
+  <img src="{{post.articleImgUrl}}" alt="author">
+</div>
+<mat-card-content>
+  <mat-card-header>
+    <div mat-card-avatar class="card-header-image">
+      <img src="{{post.authorImgUrl}}" alt="author">
+    </div>
+    <mat-card-title>{{post.author}}</mat-card-title>
+    <mat-card-subtitle>Writer</mat-card-subtitle>
+  </mat-card-header>
+  <p>
+    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+    A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+    bred for hunting.
+  </p>
+</mat-card-content>
