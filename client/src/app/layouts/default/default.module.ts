@@ -7,14 +7,14 @@ import { MatSidenavModule, MatDividerModule, MatCardModule } from '@angular/mate
 import { PostsComponent } from 'src/app/modules/posts/posts.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { DashboardService } from 'src/app/modules/dashboard.service';
-import { ArticlesComponent } from 'src/app/modules/articles/articles.component';
+import { HomeComponent } from 'src/app/modules/home/home.component';
 
 @NgModule({
   declarations: [
     DefaultComponent,
     StatsComponent,
     PostsComponent,
-    ArticlesComponent
+    HomeComponent
   ],
   imports: [
     CommonModule,
