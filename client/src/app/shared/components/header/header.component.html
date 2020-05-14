@@ -22,8 +22,8 @@
               Sign Out
             </button>
             <button mat-menu-item (click)="toggleReaderMode()">
-              <mat-icon>chrome_reader_mode</mat-icon>
-                Toggle Reader Mode
+              <mat-icon>brightness_medium</mat-icon>
+                {{ readerMode === "light-mode" ? "Dark Mode" : "Light Mode" }}
             </button>
           </mat-menu>
         </div>
