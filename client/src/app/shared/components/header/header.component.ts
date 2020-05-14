@@ -13,9 +13,7 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() { 
-    console.log(this.readerMode)
-  }
+  ngOnInit() {}
 
   toggleSidebar() {
     this.toggleSidebarEvent.emit()

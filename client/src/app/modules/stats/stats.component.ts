@@ -1,3 +1,4 @@
+import { ReaderModeService } from './../reader-mode.service';
 import { Component, OnInit } from '@angular/core';
 import { DashboardService } from '../dashboard.service';
 
@@ -11,14 +12,20 @@ export class StatsComponent implements OnInit {
   cards = [];
   pieChart = [];
   table = [];
+  readerMode = "";
 
-  constructor(private dashboardService: DashboardService) { }
+  constructor(
+    private dashboardService: DashboardService,
+    private readerModeService: ReaderModeService,
+    ) { }
 
   ngOnInit() {
     this.bigChart = this.dashboardService.bigChart();
     this.cards = this.dashboardService.cards();
     this.pieChart = this.dashboardService.pieChart();
     this.table = this.dashboardService.table();
+    this.readerMode = this.readerModeService.getMode()
+    console.log(this.readerMode)
   }
 
 }

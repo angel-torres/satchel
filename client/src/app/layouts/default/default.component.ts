@@ -1,3 +1,4 @@
+import { ReaderModeService } from './../../modules/reader-mode.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,11 +10,10 @@ export class DefaultComponent implements OnInit {
   sidebarOpen = true;
   readerMode = 'light-mode';
 
-  constructor() { }
+  constructor(private readerModeService: ReaderModeService) { }
 
   ngOnInit() {
-    const currentMode = localStorage.getItem("reader-mode")
-    this.readerMode = currentMode
+    this.readerMode = this.readerModeService.getMode()
   }
 
   sidebarToggle() {
