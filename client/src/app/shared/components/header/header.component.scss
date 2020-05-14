@@ -12,6 +12,12 @@ mat-toolbar-row {
     display: flex;
 }
 
-.mat-toolbar.mat-primary {
+.light-mode {
     background-color: darkslategrey;
+    color: white;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
 }

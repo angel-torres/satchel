@@ -1,4 +1,4 @@
-<mat-toolbar color="primary">
+<mat-toolbar [ngClass]="readerMode">
   <mat-toolbar-row>
     <button mat-icon-button (click)="toggleSidebar()">
       <mat-icon>menu</mat-icon>
@@ -21,24 +21,12 @@
               <mat-icon>exit_to_app</mat-icon>
               Sign Out
             </button>
+            <button mat-menu-item (click)="toggleReaderMode()">
+              <mat-icon>chrome_reader_mode</mat-icon>
+                Toggle Reader Mode
+            </button>
           </mat-menu>
         </div>
       </div>
-
-      <!-- <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
-        <ul fxLayout="row" fxLayoutGap="20px">
-          <li>
-            <button mat-icon-button>
-              <mat-icon>settings</mat-icon>
-            </button>
-          </li>
-          <li>
-            <button mat-icon-button>
-              <mat-icon>help_outline</mat-icon>
-            </button>
-          </li>
-          <li>Menu</li>
-        </ul>
-      </div> -->
   </mat-toolbar-row>
 </mat-toolbar>

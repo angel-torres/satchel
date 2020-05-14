@@ -7,14 +7,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DefaultComponent implements OnInit {
   sidebarOpen = true;
+  readerMode = 'light-mode';
 
   constructor() { }
 
   ngOnInit() {
+    const currentMode = localStorage.getItem("reader-mode")
+    this.readerMode = currentMode
   }
 
   sidebarToggle() {
     this.sidebarOpen = !this.sidebarOpen
+  }
+
+  toggleReaderMode() {
+    if(this.readerMode === "light-mode") {
+      localStorage.setItem("reader-mode", "dark-mode")
+      this.readerMode = "dark-mode"
+    } else {
+      localStorage.setItem("reader-mode", "light-mode")
+      this.readerMode = "light-mode"
+    }
   }
 
 }

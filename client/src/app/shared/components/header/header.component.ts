@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,10 +8,14 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   @Output() toggleSidebarEvent: EventEmitter<any> =  new EventEmitter()
+  @Output() toggleReaderModeEvent: EventEmitter<any> =  new EventEmitter()
+  @Input('readerMode') readerMode: string
 
   constructor() { }
 
-  ngOnInit() { }
+  ngOnInit() { 
+    console.log(this.readerMode)
+  }
 
   toggleSidebar() {
     this.toggleSidebarEvent.emit()
@@ -21,6 +25,10 @@ export class HeaderComponent implements OnInit {
       )
     }, 300)
   } 
+
+  toggleReaderMode() {
+    this.toggleReaderModeEvent.emit()
+  }
 
 
 }
