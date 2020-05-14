@@ -11,3 +11,7 @@ mat-toolbar-row {
 .header-right-container {
     display: flex;
 }
+
+.mat-toolbar.mat-primary {
+    background-color: darkslategrey;
+}
