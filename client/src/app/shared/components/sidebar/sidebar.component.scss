@@ -16,3 +16,38 @@
         border-radius: 50%;
     }
 }
+
+
+.light-mode {
+    background-color: white;
+    color: black;
+
+    h2 {
+        color: black;
+    }
+
+    a {
+        color: black;
+    }
+
+}
+
+.dark-mode {
+    background-color: rgb(14, 13, 13);
+    color: white;
+
+    h2 {
+        color: white;
+    }
+
+    a {
+        color: white;
+    }
+
+    a {
+
+
+    }
+
+
+}

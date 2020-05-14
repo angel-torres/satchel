@@ -20,4 +20,8 @@ mat-toolbar-row {
 .dark-mode {
     background-color: black;
     color: white;
+
+    .mat-menu-panel {
+        border: 1px solid red;
+    }
 }
