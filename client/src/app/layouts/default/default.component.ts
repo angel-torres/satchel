@@ -10,7 +10,8 @@ export class DefaultComponent implements OnInit {
   sidebarOpen = true;
   readerMode = 'light-mode';
 
-  constructor(private readerModeService: ReaderModeService) { }
+  constructor(
+    private readerModeService: ReaderModeService ) { }
 
   ngOnInit() {
     this.readerMode = this.readerModeService.getMode()
