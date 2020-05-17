@@ -13,6 +13,7 @@ export class AreaComponent implements OnInit {
   Highcharts = Highcharts;
 
   @Input() data: [];
+  @Input('readerMode') readerMode: string;
  
   constructor() { }
 

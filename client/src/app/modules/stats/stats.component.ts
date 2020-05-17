@@ -1,5 +1,5 @@
 import { ReaderModeService } from './../reader-mode.service';
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DashboardService } from '../dashboard.service';
 
 @Component({
