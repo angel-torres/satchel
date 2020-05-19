@@ -1,13 +1,13 @@
-<h3>{{announcement.title}}</h3>
-<p>{{announcement.date}}</p>
-<p>{{announcement.body}}</p>
-<div class="announcement-actions-container">
-    <p>
+<mat-card-title> {{announcement.title}} </mat-card-title>
+<mat-card-subtitle>{{announcement.date}}</mat-card-subtitle>
+<mat-card-content>{{announcement.body}}</mat-card-content>
+<mat-card-actions >
+    <button mat-button>
         <mat-icon>bookmark</mat-icon>
         Bookmark
-    </p>
-    <p>
+    </button>
+    <button mat-button>
         <mat-icon>delete</mat-icon>
         Delete
-    </p>
-</div>
+    </button>
+</mat-card-actions>
