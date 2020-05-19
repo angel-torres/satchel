@@ -15,7 +15,7 @@ const routes: Routes = [{
     path: '',
     component: HomeComponent,
     children: [{
-      path: 'announcements',
+      path: '',
       component: AnnouncementsComponent
     },{
       path: 'notifications',

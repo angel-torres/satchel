@@ -13,7 +13,8 @@ import { TableComponent } from './widgets/table/table.component';
 import { PostCardComponent } from './posts/post-card/post-card.component';
 import { AnnouncementsComponent } from './components/announcements/announcements.component';
 import { NotificationsComponent } from './components/notifications/notifications.component';
-import { NewsComponent } from './components/news/news.component'
+import { NewsComponent } from './components/news/news.component';
+import { AnnouncementCardComponent } from './components/announcement-card/announcement-card.component'
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { NewsComponent } from './components/news/news.component'
     PostCardComponent,
     AnnouncementsComponent,
     NotificationsComponent,
-    NewsComponent
+    NewsComponent,
+    AnnouncementCardComponent
   ],
   imports: [
     CommonModule,
