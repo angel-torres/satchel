@@ -12,7 +12,8 @@ import { PieComponent } from './widgets/pie/pie.component';
 import { TableComponent } from './widgets/table/table.component';
 import { PostCardComponent } from './posts/post-card/post-card.component';
 import { AnnouncementsComponent } from './components/announcements/announcements.component';
-import { NotificationsComponent } from './components/notifications/notifications.component'
+import { NotificationsComponent } from './components/notifications/notifications.component';
+import { NewsComponent } from './components/news/news.component'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NotificationsComponent } from './components/notifications/notifications
     TableComponent,
     PostCardComponent,
     AnnouncementsComponent,
-    NotificationsComponent
+    NotificationsComponent,
+    NewsComponent
   ],
   imports: [
     CommonModule,
