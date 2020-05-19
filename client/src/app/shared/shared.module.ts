@@ -15,7 +15,8 @@ import { AnnouncementsComponent } from './components/announcements/announcements
 import { NotificationsComponent } from './components/notifications/notifications.component';
 import { NewsComponent } from './components/news/news.component';
 import { AnnouncementCardComponent } from './components/announcement-card/announcement-card.component';
-import { NotificationCardComponent } from './components/notification-card/notification-card.component'
+import { NotificationCardComponent } from './components/notification-card/notification-card.component';
+import { NewsCardComponent } from './components/news-card/news-card.component'
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { NotificationCardComponent } from './components/notification-card/notifi
     NotificationsComponent,
     NewsComponent,
     AnnouncementCardComponent,
-    NotificationCardComponent
+    NotificationCardComponent,
+    NewsCardComponent
   ],
   imports: [
     CommonModule,
