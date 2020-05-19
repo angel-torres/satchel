@@ -1,3 +1,4 @@
+import { AnnouncementsService } from './../../../modules/announcements.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./announcements.component.scss']
 })
 export class AnnouncementsComponent implements OnInit {
+  announcements = [];
 
-  constructor() { }
+  constructor(private announcementsService: AnnouncementsService) { }
 
   ngOnInit() {
+    this.announcements = this.announcementsService.getAnnouncements()
   }
 
 }
