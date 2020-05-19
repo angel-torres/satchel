@@ -12,10 +12,10 @@ const routes: Routes = [{
   children: [{
     path: '',
     component: HomeComponent,
-    // children: [{
-    //   path: '/announcements',
-    //   component: AnnouncementsComponent
-    // }]
+    children: [{
+      path: 'announcements',
+      component: AnnouncementsComponent
+    }]
   },{
     path: 'stats',
     component: StatsComponent
