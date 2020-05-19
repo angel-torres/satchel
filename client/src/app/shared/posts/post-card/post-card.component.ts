@@ -8,9 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class PostCardComponent implements OnInit {
   @Input() post: {};
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

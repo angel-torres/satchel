@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-announcement-card',
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./announcement-card.component.scss']
 })
 export class AnnouncementCardComponent implements OnInit {
+  @Input('announcement') announcement: {};
 
   constructor() { }
 
   ngOnInit() {
+    console.log(this.announcement)
   }
 
 }
