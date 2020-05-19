@@ -1,12 +1,7 @@
-.article-image {
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-
-    img {
-        width: 100%;
-    }
+img {
+    max-height: 300px;
 }
+
 mat-card-header {
     display: flex;
     align-items: center;
