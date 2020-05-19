@@ -1,3 +1,3 @@
-<p>
-  news works!
-</p>
+<mat-card *ngFor="let news of news">
+  <app-news-card [news]="news"></app-news-card>
+</mat-card>
