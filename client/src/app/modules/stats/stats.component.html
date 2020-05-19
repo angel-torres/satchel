@@ -1,5 +1,7 @@
 <div>
-  <app-widget-area [readerMode]="readerMode" [data]="bigChart"></app-widget-area>
+  <mat-card [ngClass]="readerMode">
+    <app-widget-area [readerMode]="readerMode" [data]="bigChart"></app-widget-area>
+  </mat-card>
 </div>
 
 <br>

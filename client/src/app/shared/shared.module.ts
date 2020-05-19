@@ -10,7 +10,8 @@ import { HighchartsChartModule } from 'highcharts-angular';
 import { CardComponent } from './widgets/card/card.component';
 import { PieComponent } from './widgets/pie/pie.component';
 import { TableComponent } from './widgets/table/table.component';
-import { PostCardComponent } from './posts/post-card/post-card.component'
+import { PostCardComponent } from './posts/post-card/post-card.component';
+import { AnnouncementsComponent } from './components/announcements/announcements.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { PostCardComponent } from './posts/post-card/post-card.component'
     CardComponent,
     PieComponent,
     TableComponent,
-    PostCardComponent
+    PostCardComponent,
+    AnnouncementsComponent
   ],
   imports: [
     CommonModule,
