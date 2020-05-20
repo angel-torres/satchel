@@ -1,12 +1,12 @@
-import { NotificationsComponent } from './shared/components/notifications/notifications.component';
+import { NotificationsComponent } from './modules/notifications/notifications.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DefaultComponent } from './layouts/default/default.component';
 import { StatsComponent } from './modules/stats/stats.component';
 import { ArticlesComponent } from './modules/articles/articles.component';
 import { HomeComponent } from './modules/home/home.component';
-import { AnnouncementsComponent } from './shared/components/announcements/announcements.component';
-import { NewsComponent } from './shared/components/news/news.component';
+import { AnnouncementsComponent } from './modules/announcements/announcements.component';
+import { NewsComponent } from './modules/news/news.component';
 
 const routes: Routes = [{
   path:'',

@@ -1,4 +1,4 @@
-import { NewsService } from './../../../modules/news.service';
+import { NewsService } from '../news.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

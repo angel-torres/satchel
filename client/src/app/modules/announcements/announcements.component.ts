@@ -1,4 +1,4 @@
-import { AnnouncementsService } from './../../../modules/announcements.service';
+import { AnnouncementsService } from '../announcements.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

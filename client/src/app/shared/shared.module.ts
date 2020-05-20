@@ -11,9 +11,9 @@ import { CardComponent } from './widgets/card/card.component';
 import { PieComponent } from './widgets/pie/pie.component';
 import { TableComponent } from './widgets/table/table.component';
 import { PostCardComponent } from './posts/post-card/post-card.component';
-import { AnnouncementsComponent } from './components/announcements/announcements.component';
-import { NotificationsComponent } from './components/notifications/notifications.component';
-import { NewsComponent } from './components/news/news.component';
+import { AnnouncementsComponent } from '../modules/announcements/announcements.component';
+import { NotificationsComponent } from '../modules/notifications/notifications.component';
+import { NewsComponent } from '../modules/news/news.component';
 import { AnnouncementCardComponent } from './components/announcement-card/announcement-card.component';
 import { NotificationCardComponent } from './components/notification-card/notification-card.component';
 import { NewsCardComponent } from './components/news-card/news-card.component'
