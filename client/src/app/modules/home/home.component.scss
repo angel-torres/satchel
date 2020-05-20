@@ -10,17 +10,19 @@ mat-card {
     .header-links {
         padding: 10px;
         display: flex;
+        margin: 10px;
 
         a {
             color:grey;
             text-decoration: none;
             font-size: 25px;
-            margin: 10px;
+            padding: 10px;
             transition: ease-in-out;
+            border-radius: 5px;
         }
 
         .list-item-active {
-            border-bottom: 2px solid darkslategray;
+            background-color: rgb(231, 231, 231);
         }
 
     }
