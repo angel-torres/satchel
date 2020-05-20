@@ -2,7 +2,7 @@ import { NotificationsComponent } from './modules/notifications/notifications.co
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DefaultComponent } from './layouts/default/default.component';
-import { StatsComponent } from './modules/stats/stats.component';
+import { GradesComponent } from './modules/grades/grades.component';
 import { ArticlesComponent } from './modules/articles/articles.component';
 import { HomeComponent } from './modules/home/home.component';
 import { AnnouncementsComponent } from './modules/announcements/announcements.component';
@@ -25,8 +25,8 @@ const routes: Routes = [{
       component: NotificationsComponent
     }]
   },{
-    path: 'stats',
-    component: StatsComponent
+    path: 'grades',
+    component: GradesComponent
   },{
     path: 'articles',
     component: ArticlesComponent

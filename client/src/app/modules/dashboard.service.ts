@@ -9,19 +9,19 @@ export class DashboardService {
 
   bigChart() {
     return [{
-      name: 'Asia',
+      name: 'Calculus',
       data: [502, 635, 809, 947, 1402, 3634, 5268]
         }, {
-      name: 'Africa',
+      name: 'History',
       data: [106, 107, 111, 133, 221, 767, 1766]
         }, {
-      name: 'Europe',
+      name: 'Psychology',
       data: [163, 203, 276, 408, 547, 729, 628]
         }, {
-      name: 'America',
+      name: 'Computer Science',
       data: [18, 31, 54, 156, 339, 818, 1201]
         }, {
-      name: 'Oceania',
+      name: 'Physics',
       data: [2, 2, 2, 6, 13, 30, 46]
     }]
   }
@@ -32,34 +32,22 @@ export class DashboardService {
 
   pieChart() {
     return [{
-          name: 'Chrome',
+          name: 'Calculus',
           y: 61.41,
           sliced: true,
           selected: true
       }, {
-          name: 'Internet Explorer',
+          name: 'History',
           y: 11.84
       }, {
-          name: 'Firefox',
+          name: 'Psychology',
           y: 10.85
       }, {
-          name: 'Edge',
+          name: 'Computer Science',
           y: 4.67
       }, {
-          name: 'Safari',
+          name: 'Physics',
           y: 4.18
-      }, {
-          name: 'Sogou Explorer',
-          y: 1.64
-      }, {
-          name: 'Opera',
-          y: 1.6
-      }, {
-          name: 'QQ',
-          y: 1.2
-      }, {
-          name: 'Other',
-          y: 2.61
       }]
   }
 

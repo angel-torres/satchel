@@ -1,13 +1,13 @@
-import { ReaderModeService } from './../reader-mode.service';
+import { ReaderModeService } from '../reader-mode.service';
 import { Component, OnInit } from '@angular/core';
 import { DashboardService } from '../dashboard.service';
 
 @Component({
   selector: 'app-dashboard',
-  templateUrl: './stats.component.html',
-  styleUrls: ['./stats.component.scss']
+  templateUrl: './grades.component.html',
+  styleUrls: ['./grades.component.scss']
 })
-export class StatsComponent implements OnInit {
+export class GradesComponent implements OnInit {
   // @Input('readerMode') readerMode:string;
   bigChart = [];
   cards = [];
@@ -26,7 +26,6 @@ export class StatsComponent implements OnInit {
     this.pieChart = this.dashboardService.pieChart();
     this.table = this.dashboardService.table();
     this.readerMode = this.readerModeService.getMode()
-    console.log(this.readerMode)
   }
 
 }
