@@ -33,7 +33,7 @@ export class DashboardService {
   pieChart() {
     return [{
           name: 'Calculus',
-          y: 61.41,
+          y: 33.3,
           sliced: true,
           selected: true
       }, {
@@ -44,10 +44,10 @@ export class DashboardService {
           y: 10.85
       }, {
           name: 'Computer Science',
-          y: 4.67
+          y: 34.67
       }, {
           name: 'Physics',
-          y: 4.18
+          y: 40.18
       }]
   }
 

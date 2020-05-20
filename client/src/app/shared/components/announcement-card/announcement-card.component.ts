@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./announcement-card.component.scss']
 })
 export class AnnouncementCardComponent implements OnInit {
-  @Input('announcement') announcement: {};
+  @Input('announcement') announcement: any;
 
   constructor() { }
 
