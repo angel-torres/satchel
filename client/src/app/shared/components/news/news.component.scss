@@ -1,3 +1,8 @@
-mat-card {
-    margin: 10px 0;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+
+    mat-card {
+        margin: 10px 0;
+    }
 }

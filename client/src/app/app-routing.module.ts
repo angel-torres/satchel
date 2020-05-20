@@ -16,13 +16,13 @@ const routes: Routes = [{
     component: HomeComponent,
     children: [{
       path: '',
+      component: NewsComponent
+    },{
+      path: 'announcements',
       component: AnnouncementsComponent
     },{
       path: 'notifications',
       component: NotificationsComponent
-    },{
-      path: 'news',
-      component: NewsComponent
     }]
   },{
     path: 'stats',

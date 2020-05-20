@@ -15,7 +15,13 @@ mat-card {
             color:grey;
             text-decoration: none;
             font-size: 25px;
-            padding: 10px;
+            margin: 10px;
+            transition: ease-in-out;
         }
+
+        .list-item-active {
+            border-bottom: 2px solid darkslategray;
+        }
+
     }
 }
