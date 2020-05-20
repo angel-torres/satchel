@@ -1,11 +1,11 @@
 <mat-card>
   <img mat-card-image src="https://images.unsplash.com/photo-1455849318743-b2233052fcff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
 
-  <mat-card-actions class="header-links">
+  <mat-card-footer class="header-links">
     <a mat-list-item routerLinkActive="list-item-active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/">News</a>
     <a mat-list-item routerLinkActive="list-item-active" routerLink="/announcements">Announcements</a>
     <a mat-list-item routerLinkActive="list-item-active" routerLink="/notifications">Notifications</a>
-  </mat-card-actions>
+  </mat-card-footer>
 </mat-card>
 
 <router-outlet></router-outlet>
