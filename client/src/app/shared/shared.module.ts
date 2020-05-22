@@ -17,7 +17,8 @@ import { NewsComponent } from '../modules/news/news.component';
 import { AnnouncementCardComponent } from './components/announcement-card/announcement-card.component';
 import { NotificationCardComponent } from './components/notification-card/notification-card.component';
 import { NewsCardComponent } from './components/news-card/news-card.component';
-import { ContactCardComponent } from './components/contact-card/contact-card.component'
+import { ContactCardComponent } from './components/contact-card/contact-card.component';
+import { TodoCardComponent } from './components/todo-card/todo-card.component'
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { ContactCardComponent } from './components/contact-card/contact-card.com
     AnnouncementCardComponent,
     NotificationCardComponent,
     NewsCardComponent,
-    ContactCardComponent
+    ContactCardComponent,
+    TodoCardComponent
   ],
   imports: [
     CommonModule,
