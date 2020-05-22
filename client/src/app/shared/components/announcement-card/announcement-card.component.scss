@@ -8,3 +8,9 @@
         align-items: center;
     }
 }
+
+.dark-mode {
+    mat-card-subtitle {
+        color: white;
+    }
+}

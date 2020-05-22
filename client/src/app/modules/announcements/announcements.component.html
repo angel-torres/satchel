@@ -1,3 +1,3 @@
-<mat-card *ngFor="let announcement of announcements">
-  <app-announcement-card [announcement]="announcement"></app-announcement-card>
+<mat-card [ngClass]="readerMode" *ngFor="let announcement of announcements">
+  <app-announcement-card [readerMode]="readerMode" [announcement]="announcement"></app-announcement-card>
 </mat-card>
