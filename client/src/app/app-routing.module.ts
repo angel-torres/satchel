@@ -8,6 +8,7 @@ import { HomeComponent } from './modules/home/home.component';
 import { AnnouncementsComponent } from './modules/announcements/announcements.component';
 import { NewsComponent } from './modules/news/news.component';
 import { ContactsComponent } from './modules/contacts/contacts.component';
+import { TodosComponent } from './modules/todos/todos.component';
 
 const routes: Routes = [{
   path:'',
@@ -34,6 +35,9 @@ const routes: Routes = [{
   }, {
     path: 'contacts',
     component: ContactsComponent
+  }, {
+    path: 'todos',
+    component: TodosComponent
   }]
 }];
 
