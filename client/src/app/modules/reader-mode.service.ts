@@ -4,11 +4,26 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ReaderModeService {
+  private readerMode: string;
 
-  constructor() { }
+  constructor() {
+    this.readerMode = localStorage.getItem('reader-mode')
+  }
 
   getMode() {
-    const renderMode = localStorage.getItem('reader-mode')
-    return renderMode
+    this.readerMode = localStorage.getItem('reader-mode')
+    return this.readerMode
   };
+
+  toggleReaderMode() {
+    if(this.readerMode === "light-mode") {
+      localStorage.setItem("reader-mode", "dark-mode")
+      this.readerMode = "dark-mode"
+    } else {
+      localStorage.setItem("reader-mode", "light-mode")
+      this.readerMode = "light-mode"
+    }
+
+    return this.readerMode
+  }
 }

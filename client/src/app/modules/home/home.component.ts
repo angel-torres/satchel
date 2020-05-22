@@ -1,3 +1,4 @@
+import { ReaderModeService } from './../reader-mode.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  readerMode = ""
 
-  constructor() { }
+  constructor(private readerModeService: ReaderModeService) { }
 
   ngOnInit() {
+    this.readerMode = this.readerModeService.getMode()
   }
 
 }

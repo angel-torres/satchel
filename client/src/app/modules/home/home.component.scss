@@ -27,3 +27,18 @@ mat-card {
 
     }
 }
+
+.dark-mode {
+    color: white;
+    background-color: rgb(82, 82, 82);
+
+    .header-links {
+        a {
+            color: white;
+        }
+
+        .list-item-active {
+            color: black;
+        }
+    }
+}

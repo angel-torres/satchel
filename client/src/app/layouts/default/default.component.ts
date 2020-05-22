@@ -22,13 +22,7 @@ export class DefaultComponent implements OnInit {
   }
 
   toggleReaderMode() {
-    if(this.readerMode === "light-mode") {
-      localStorage.setItem("reader-mode", "dark-mode")
-      this.readerMode = "dark-mode"
-    } else {
-      localStorage.setItem("reader-mode", "light-mode")
-      this.readerMode = "light-mode"
-    }
+    this.readerModeService.toggleReaderMode()
   }
 
 }

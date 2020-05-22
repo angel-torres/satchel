@@ -27,7 +27,7 @@ export class HeaderComponent implements OnInit {
 
   toggleReaderMode() {
     this.toggleReaderModeEvent.emit()
-    this.router.navigate(['/'])
+    window.location.reload();
   }
 
 
