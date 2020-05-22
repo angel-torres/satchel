@@ -1,5 +1,5 @@
 <div class="grid-container">
-  <mat-card *ngFor="let news of news">
-    <app-news-card [news]="news"></app-news-card>
+  <mat-card [ngClass]="readerMode" *ngFor="let news of news">
+    <app-news-card [readerMode]="readerMode" [news]="news"></app-news-card>
   </mat-card>
 </div>
