@@ -1,5 +1,5 @@
 <div class="contacts-container">
-  <mat-card *ngFor="let contact of contacts">
+  <mat-card [ngClass]="readerMode" *ngFor="let contact of contacts">
     <app-contact-card [contact]="contact"></app-contact-card>
   </mat-card>
 </div>

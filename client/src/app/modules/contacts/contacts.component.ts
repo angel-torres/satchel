@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ReaderModeService } from '../reader-mode.service';
 
 @Component({
   selector: 'app-contacts',
@@ -7,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactsComponent implements OnInit {
   contacts = []
+  readerMode: string
 
-  constructor() { }
+  constructor(private readerModeService: ReaderModeService) { }
 
   ngOnInit() {
+    this.readerMode = this.readerModeService.getMode()
+
+
     this.contacts = [{
       name: "Jason Hews",
       phone: "452-752-4561",
