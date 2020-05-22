@@ -1,3 +1,3 @@
-<mat-card *ngFor="let notification of notifications">
-  <app-notification-card [notification]="notification"></app-notification-card>
+<mat-card [ngClass]="readerMode" *ngFor="let notification of notifications">
+  <app-notification-card [readerMode]="readerMode" [notification]="notification"></app-notification-card>
 </mat-card>

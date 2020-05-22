@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class NotificationCardComponent implements OnInit {
   @Input('notification') notification: any;
+  @Input('readerMode') readerMode: string;
 
   constructor() { }
 
