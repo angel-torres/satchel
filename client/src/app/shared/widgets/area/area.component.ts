@@ -14,20 +14,43 @@ export class AreaComponent implements OnInit {
 
   @Input() data: [];
   @Input('readerMode') readerMode: string;
+  backgroundColor: string;
  
   constructor() { }
 
   ngOnInit() {
+    this.readerMode === "dark-mode" ? this.backgroundColor = "rgb(82, 82, 82)" : this.backgroundColor = "rgb(256, 256, 256)"
+
     this.chartOptions = {
         chart: {
-            type: 'area'
+            type: 'area',
+            backgroundColor: this.backgroundColor,
+            className: "chart-high"
+
         },
         title: {
-            text: 'Time Spent Studying by Class'
+            text: 'Time Spent Studying by Class',
+            style: {
+              "color": "rgb(256, 256, 256)"
+            }
         },
         subtitle: {
-            text: ''
+            text: '',
         },
+        xAxis: [{
+          labels: {
+            style: {
+              "color": "rgb(256, 256, 256)"
+            }
+          }
+        }],
+        yAxis: [{
+          labels: {
+            style: {
+              "color": "rgb(256, 256, 256)"
+            }
+          }
+        }],
         tooltip: {
             split: true,
         },
