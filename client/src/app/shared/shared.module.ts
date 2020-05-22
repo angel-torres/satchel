@@ -1,3 +1,4 @@
+import { TodosComponent } from './../modules/todos/todos.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
@@ -19,6 +20,7 @@ import { NotificationCardComponent } from './components/notification-card/notifi
 import { NewsCardComponent } from './components/news-card/news-card.component';
 import { ContactCardComponent } from './components/contact-card/contact-card.component';
 import { TodoCardComponent } from './components/todo-card/todo-card.component'
+import { ContactsComponent } from '../modules/contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { TodoCardComponent } from './components/todo-card/todo-card.component'
     NotificationCardComponent,
     NewsCardComponent,
     ContactCardComponent,
-    TodoCardComponent
+    TodoCardComponent,
+    ContactsComponent,
+    TodosComponent
   ],
   imports: [
     CommonModule,
@@ -59,7 +63,8 @@ import { TodoCardComponent } from './components/todo-card/todo-card.component'
     CardComponent,
     PieComponent,
     TableComponent,
-    PostCardComponent
+    PostCardComponent,
+    TodoCardComponent
   ],
 })
 export class SharedModule { }
