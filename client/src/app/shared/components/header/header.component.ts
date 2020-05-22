@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-header',
@@ -11,7 +12,7 @@ export class HeaderComponent implements OnInit {
   @Output() toggleReaderModeEvent: EventEmitter<any> =  new EventEmitter()
   @Input('readerMode') readerMode: string
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {}
 
@@ -26,6 +27,7 @@ export class HeaderComponent implements OnInit {
 
   toggleReaderMode() {
     this.toggleReaderModeEvent.emit()
+    this.router.navigate(['/'])
   }
 
 

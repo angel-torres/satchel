@@ -1,5 +1,5 @@
 <div class="posts-container">
-  <mat-card *ngFor="let post of posts">
-    <app-post-card [post]="post"></app-post-card>
+  <mat-card [ngClass]="readerMode" *ngFor="let post of posts">
+    <app-post-card [readerMode]="readerMode" [post]="post"></app-post-card>
   </mat-card>
 </div>

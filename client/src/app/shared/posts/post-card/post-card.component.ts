@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PostCardComponent implements OnInit {
   @Input() post: any;
+  @Input('readerMode') readerMode: string;
 
   constructor() {}
 

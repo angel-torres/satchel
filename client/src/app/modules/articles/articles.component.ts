@@ -1,3 +1,4 @@
+import { ReaderModeService } from './../reader-mode.service';
 import { Component, OnInit } from '@angular/core';
 import { PostsService } from '../posts.service';
 
@@ -9,11 +10,16 @@ import { PostsService } from '../posts.service';
 export class ArticlesComponent implements OnInit {
 
   posts = [];
+  readerMode = "";
 
-  constructor(private postsService:  PostsService) { }
+  constructor(
+    private postsService:  PostsService,
+    private readerModeService: ReaderModeService 
+    ) { }
 
   ngOnInit() {
     this.posts = this.postsService.posts()
+    this.readerMode = this.readerModeService.getMode()
   }
 
 }
