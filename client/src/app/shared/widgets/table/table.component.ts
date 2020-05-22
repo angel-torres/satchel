@@ -10,11 +10,22 @@ import HC_exporting from 'highcharts/modules/exporting';
 export class TableComponent implements OnInit {
 
   @Input() data: [];
+  @Input('readerMode') readerMode: string;
+  backgroundColor: string;
+  textColor: string;
   Highcharts = Highcharts;
   chartOptions = {};
   constructor() { }
 
   ngOnInit() {
+    if(this.readerMode === "dark-mode") {
+      this.backgroundColor = "rgb(82, 82, 82)" 
+      this.textColor = "rgb(255, 255, 255)" 
+    } else {
+      this.backgroundColor = "rgb(256, 256, 256)" 
+      this.textColor = "rgb(0, 0, 0)" 
+    }
+
     this.chartOptions = {
       chart: {
         type: 'column'

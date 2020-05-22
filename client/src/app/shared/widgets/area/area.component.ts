@@ -28,7 +28,6 @@ export class AreaComponent implements OnInit {
       this.textColor = "rgb(0, 0, 0)" 
     } 
 
-    console.log(this.readerMode)
     this.chartOptions = {
         chart: {
             type: 'area',

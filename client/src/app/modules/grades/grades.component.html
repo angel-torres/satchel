@@ -33,9 +33,9 @@
   <br>
 
   <div class="bottom-charts">
-      <app-widget-table [data]="table"></app-widget-table>
+      <app-widget-table [readerMode]="readerMode" [data]="table"></app-widget-table>
     <div>
-      <app-widget-pie [data]="pieChart"></app-widget-pie>
+      <app-widget-pie [readerMode]="readerMode" [data]="pieChart"></app-widget-pie>
     </div>
   </div>
   <br>
