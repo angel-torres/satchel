@@ -1,21 +1,33 @@
-.stats-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 5px;
+.grades-container {
+    width: 100%;
 
-    .light-mode {
-        background-color: white;
-        color: black;
+    .stats-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        gap: 5px;
+
+        .light-mode {
+            background-color: white;
+            color: black;
+        }
+
+        .dark-mode {
+            background-color: rgb(82, 82, 82);
+            color: white;
+        }
+    }
+
+    .bottom-charts {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));;
+        gap: 5px; 
+        width: 100%;
+        margin-bottom: 20px;
     }
 
     .dark-mode {
         background-color: rgb(82, 82, 82);
         color: white;
     }
-}
 
-
-.dark-mode {
-    background-color: rgb(82, 82, 82);
-    color: white;
 }

@@ -1,39 +1,42 @@
-<div>
-  <mat-card [ngClass]="readerMode">
-    <app-widget-area [readerMode]="readerMode" [data]="bigChart"></app-widget-area>
-  </mat-card>
-</div>
-
-<br>
-
-<mat-divider></mat-divider>
-
-<br>
-
-<div class="stats-cards">
-  <mat-card [ngClass]="readerMode">
-    <app-widget-card label="Users" total="18k" percentage="50" [data]="cards"></app-widget-card>
-  </mat-card>
-  <mat-card [ngClass]="readerMode">
-    <app-widget-card label="Items" total="30k" percentage="20" [data]="cards"></app-widget-card>
-  </mat-card>
-  <mat-card [ngClass]="readerMode">
-    <app-widget-card label="Revenue" total="200k" percentage="5" [data]="cards"></app-widget-card>
-  </mat-card>
-  <mat-card [ngClass]="readerMode">
-    <app-widget-card label="Sales" total="300k" percentage="20" [data]="cards"></app-widget-card>
-  </mat-card>
-</div>
-
-<br>
-
-<mat-divider [ngClass]="readerMode"></mat-divider>
-
-<br>
-
-<div>
-    <app-widget-table [data]="table"></app-widget-table>
+<div class="grades-container">
   <div>
-    <app-widget-pie [data]="pieChart"></app-widget-pie>
+    <mat-card [ngClass]="readerMode">
+      <app-widget-area [readerMode]="readerMode" [data]="bigChart"></app-widget-area>
+    </mat-card>
   </div>
+
+  <br>
+
+  <mat-divider></mat-divider>
+
+  <br>
+
+  <div class="stats-cards">
+    <mat-card [ngClass]="readerMode">
+      <app-widget-card label="Users" total="18k" percentage="50" [data]="cards"></app-widget-card>
+    </mat-card>
+    <mat-card [ngClass]="readerMode">
+      <app-widget-card label="Items" total="30k" percentage="20" [data]="cards"></app-widget-card>
+    </mat-card>
+    <mat-card [ngClass]="readerMode">
+      <app-widget-card label="Revenue" total="200k" percentage="5" [data]="cards"></app-widget-card>
+    </mat-card>
+    <mat-card [ngClass]="readerMode">
+      <app-widget-card label="Sales" total="300k" percentage="20" [data]="cards"></app-widget-card>
+    </mat-card>
+  </div>
+
+  <br>
+
+  <mat-divider [ngClass]="readerMode"></mat-divider>
+
+  <br>
+
+  <div class="bottom-charts">
+      <app-widget-table [data]="table"></app-widget-table>
+    <div>
+      <app-widget-pie [data]="pieChart"></app-widget-pie>
+    </div>
+  </div>
+  <br>
 </div>
