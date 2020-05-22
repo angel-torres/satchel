@@ -1,3 +1,5 @@
-<mat-card>
-  <app-contact-card></app-contact-card>
-</mat-card>
+<div class="contacts-container">
+  <mat-card *ngFor="let contact of contacts">
+    <app-contact-card [contact]="contact"></app-contact-card>
+  </mat-card>
+</div>
