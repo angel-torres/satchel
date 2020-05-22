@@ -35,6 +35,7 @@ export class AreaComponent implements OnInit {
             className: "chart-high"
 
         },
+        colors: ["#4ECDC4", "#1A535C","#F7FFF7", "#FF6B6B", "#FFE66D"],
         title: {
             text: 'Time Spent Studying by Class',
             style: {

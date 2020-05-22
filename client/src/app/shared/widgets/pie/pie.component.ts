@@ -32,10 +32,15 @@ export class PieComponent implements OnInit {
           plotBackgroundColor: null,
           plotBorderWidth: null,
           plotShadow: false,
-          type: 'pie'
+          type: 'pie',
+          backgroundColor: this.backgroundColor
       },
+      colors: ["#4ECDC4", "#1A535C","#F7FFF7", "#FF6B6B", "#FFE66D"],
       title: {
-          text: 'Test Chart'
+          text: 'Test Chart',
+          style: {
+            "color": this.textColor
+          }
       },
       tooltip: {
           pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'

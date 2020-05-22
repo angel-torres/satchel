@@ -28,10 +28,15 @@ export class TableComponent implements OnInit {
 
     this.chartOptions = {
       chart: {
-        type: 'column'
-    },
+        type: 'column',
+        backgroundColor: this.backgroundColor
+    }, 
+    colors: ["#4ECDC4", "#1A535C","#F7FFF7", "#FF6B6B", "#FFE66D"],
     title: {
-        text: 'New Users'
+        text: 'New Users',
+        style: {
+          "color": this.textColor
+        }
     },
     subtitle: {
         text: 'by Month'
@@ -51,12 +56,30 @@ export class TableComponent implements OnInit {
             'Nov',
             'Dec'
         ],
-        crosshair: true
+        crosshair: true,
+        labels: {
+          style: {
+            "color": this.textColor
+          }
+        }
     },
     yAxis: {
         min: 0,
         title: {
-            text: ''
+            text: '',
+            style: {
+              "color": this.textColor
+            }
+        },
+        labels: {
+          style: {
+            "color": this.textColor
+          }
+        }
+    },
+    legend: {
+        itemStyle: {
+          "color": this.textColor
         }
     },
     tooltip: {
