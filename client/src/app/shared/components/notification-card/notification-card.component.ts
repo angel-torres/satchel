@@ -12,7 +12,7 @@ interface Notification {
   styleUrls: ['./notification-card.component.scss']
 })
 export class NotificationCardComponent implements OnInit {
-  @Input('notification') notification: any;
+  @Input('notification') notification: Notification;
   @Input('readerMode') readerMode: string;
 
   constructor() { }
