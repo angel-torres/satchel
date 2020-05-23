@@ -1,5 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 
+interface Notification {
+  title: string;
+  date: string;
+  body: string;
+}
+
 @Component({
   selector: 'app-notification-card',
   templateUrl: './notification-card.component.html',
