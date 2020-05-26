@@ -47,6 +47,9 @@ const routes: Routes = [{
   path: '',
   component: AuthComponent,
   children: [{
+    path: '',
+    component: LandingComponent
+  },{
     path: 'login',
     component: LoginComponent
   }, {
