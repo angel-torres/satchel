@@ -9,6 +9,8 @@ import { AnnouncementsComponent } from './layouts/announcements/announcements.co
 import { NewsComponent } from './layouts/news/news.component';
 import { ContactsComponent } from './layouts/contacts/contacts.component';
 import { TodosComponent } from './layouts/todos/todos.component';
+import { LoginComponent } from './modules/auth/login/login.component';
+import { SignupComponent } from './modules/auth/signup/signup.component';
 
 const routes: Routes = [{
   path:'',
@@ -39,6 +41,12 @@ const routes: Routes = [{
     path: 'todos',
     component: TodosComponent
   }]
+}, {
+  path: 'login',
+  component: LoginComponent
+}, {
+  path: 'signup',
+  component: SignupComponent
 }];
 
 @NgModule({
