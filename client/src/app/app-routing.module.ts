@@ -13,7 +13,7 @@ import { LoginComponent } from './modules/auth/login/login.component';
 import { SignupComponent } from './modules/auth/signup/signup.component';
 
 const routes: Routes = [{
-  path:'',
+  path:'dashboard',
   component: DefaultComponent,
   children: [{
     path: '',
