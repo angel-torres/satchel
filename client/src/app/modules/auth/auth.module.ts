@@ -5,7 +5,7 @@ import { AuthComponent } from './auth.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { LandingComponent } from './landing/landing.component';
-import { MatToolbarModule, MatButtonModule, MatCardModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatCardModule, MatFormFieldModule, MatInputModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,9 @@ import { MatToolbarModule, MatButtonModule, MatCardModule } from '@angular/mater
     RouterModule,
     MatToolbarModule,
     MatButtonModule,
-    MatCardModule  
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule
   ]
 })
 export class AuthModule { }
