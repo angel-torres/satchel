@@ -1,4 +1,4 @@
-import { ReaderModeService } from './../reader-mode.service';
+import { ReaderModeService } from '../reader-mode.service';
 import { Component, OnInit } from '@angular/core';
 import { PostsService } from '../posts.service';
 

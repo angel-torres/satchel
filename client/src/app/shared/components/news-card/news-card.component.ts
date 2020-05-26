@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ReaderModeService } from 'src/app/modules/reader-mode.service';
+import { ReaderModeService } from 'src/app/layouts/reader-mode.service';
 
 interface News {
   title: string;

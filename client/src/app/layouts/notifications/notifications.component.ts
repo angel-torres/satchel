@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NotificationsService } from 'src/app/modules/notifications.service';
+import { NotificationsService } from 'src/app/layouts/notifications.service';
 import { ReaderModeService } from '../reader-mode.service';
 
 @Component({

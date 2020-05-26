@@ -1,14 +1,14 @@
-import { NotificationsComponent } from './modules/notifications/notifications.component';
+import { NotificationsComponent } from './layouts/notifications/notifications.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { DefaultComponent } from './layouts/default/default.component';
-import { GradesComponent } from './modules/grades/grades.component';
-import { ArticlesComponent } from './modules/articles/articles.component';
-import { HomeComponent } from './modules/home/home.component';
-import { AnnouncementsComponent } from './modules/announcements/announcements.component';
-import { NewsComponent } from './modules/news/news.component';
-import { ContactsComponent } from './modules/contacts/contacts.component';
-import { TodosComponent } from './modules/todos/todos.component';
+import { DefaultComponent } from './modules/default/default.component';
+import { GradesComponent } from './layouts/grades/grades.component';
+import { ArticlesComponent } from './layouts/articles/articles.component';
+import { HomeComponent } from './layouts/home/home.component';
+import { AnnouncementsComponent } from './layouts/announcements/announcements.component';
+import { NewsComponent } from './layouts/news/news.component';
+import { ContactsComponent } from './layouts/contacts/contacts.component';
+import { TodosComponent } from './layouts/todos/todos.component';
 
 const routes: Routes = [{
   path:'',
