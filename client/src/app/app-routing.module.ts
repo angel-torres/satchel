@@ -11,6 +11,7 @@ import { ContactsComponent } from './layouts/contacts/contacts.component';
 import { TodosComponent } from './layouts/todos/todos.component';
 import { LoginComponent } from './modules/auth/login/login.component';
 import { SignupComponent } from './modules/auth/signup/signup.component';
+import { LandingComponent } from './modules/auth/landing/landing.component';
 
 const routes: Routes = [{
   path:'dashboard',
@@ -42,11 +43,15 @@ const routes: Routes = [{
     component: TodosComponent
   }]
 }, {
-  path: 'login',
-  component: LoginComponent
-}, {
-  path: 'signup',
-  component: SignupComponent
+  path: '',
+  component: LandingComponent,
+  children: [{
+    path: 'login',
+    component: LoginComponent
+  }, {
+    path: 'signup',
+    component: SignupComponent
+  }]
 }];
 
 @NgModule({

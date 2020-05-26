@@ -4,12 +4,14 @@ import { CommonModule } from '@angular/common';
 import { AuthComponent } from './auth.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { LandingComponent } from './landing/landing.component';
 
 @NgModule({
   declarations: [
     AuthComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    LandingComponent
   ],
   imports: [
     CommonModule,
