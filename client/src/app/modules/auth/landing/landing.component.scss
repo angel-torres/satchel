@@ -1,11 +1,12 @@
 .header {
-    height: 500px;
+    height: 680px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-position: center;
     background-size: cover;
+    position: relative;
     background-image: url("https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-1.2.1&auto=format&fit=crop&w=1315&q=80");
 
     .cta {
@@ -26,6 +27,16 @@
             font-size: 1.05rem;
         }
     }
+
+    button {
+        margin-bottom: 180px;
+    }
+
+    img {
+        position: absolute;
+        width: 800px;
+        bottom: -200px;
+    }
 }
 
 .features {
@@ -35,12 +46,14 @@
     align-items: center;
     max-width: 1400px;
     margin: 0 auto;
+    margin-top: 240px;
 
     .feature-description {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         padding: 50px;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 
         h3 {
             width: 400px;
