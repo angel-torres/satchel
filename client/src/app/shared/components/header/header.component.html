@@ -4,29 +4,30 @@
       <mat-icon>menu</mat-icon>
     </button>
 
-      <span>Student Dashboard</span>
-      <div class="header-right-container">
-        <button mat-icon-button>
-          <mat-icon>settings</mat-icon>
+    <span>Student Dashboard</span>
+
+    <div class="header-right-container">
+      <button mat-icon-button>
+        <mat-icon>settings</mat-icon>
+      </button>
+      <button mat-icon-button>
+        <mat-icon>help_outline</mat-icon>
+      </button>
+      <div>
+        <button mat-button [matMenuTriggerFor]="menu">
+          <mat-icon>person_outline</mat-icon>
         </button>
-        <button mat-icon-button>
-          <mat-icon>help_outline</mat-icon>
-        </button>
-        <div>
-          <button mat-button [matMenuTriggerFor]="menu">
-            <mat-icon>person_outline</mat-icon>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <mat-icon>exit_to_app</mat-icon>
+            Sign Out
           </button>
-          <mat-menu #menu="matMenu">
-            <button mat-menu-item>
-              <mat-icon>exit_to_app</mat-icon>
-              Sign Out
-            </button>
-            <button mat-menu-item (click)="toggleReaderMode()">
-              <mat-icon>brightness_medium</mat-icon>
-                {{ readerMode === "light-mode" ? "Dark Mode" : "Light Mode" }}
-            </button>
-          </mat-menu>
-        </div>
+          <button mat-menu-item (click)="toggleReaderMode()">
+            <mat-icon>brightness_medium</mat-icon>
+              {{ readerMode === "light-mode" ? "Dark Mode" : "Light Mode" }}
+          </button>
+        </mat-menu>
       </div>
+    </div>
   </mat-toolbar-row>
 </mat-toolbar>

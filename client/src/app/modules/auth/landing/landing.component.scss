@@ -1,0 +1,15 @@
+ul li {
+    list-style: none;
+}
+
+mat-toolbar-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+.nav-right-container {
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+}
