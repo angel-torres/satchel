@@ -12,6 +12,7 @@ import { TodosComponent } from './layouts/todos/todos.component';
 import { LoginComponent } from './modules/auth/login/login.component';
 import { SignupComponent } from './modules/auth/signup/signup.component';
 import { LandingComponent } from './modules/auth/landing/landing.component';
+import { AuthComponent } from './modules/auth/auth.component';
 
 const routes: Routes = [{
   path:'dashboard',
@@ -44,7 +45,7 @@ const routes: Routes = [{
   }]
 }, {
   path: '',
-  component: LandingComponent,
+  component: AuthComponent,
   children: [{
     path: 'login',
     component: LoginComponent
