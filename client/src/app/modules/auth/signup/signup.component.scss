@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: calc(100vh - 63.99px - 63.99px);
 
     mat-card {
         width: 400px;
