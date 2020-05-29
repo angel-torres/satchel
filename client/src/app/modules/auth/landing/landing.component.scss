@@ -82,8 +82,15 @@
             align-items: center;
             padding: 20px;
 
+            mat-card-title {
+                font-family: 'Oswald', sans-serif;
+            }
+
             mat-card-content {
                 margin: 10px;
+                font-family: 'Montserrat', sans-serif;
+                line-height: 1.5;
+                font-size: 1.4rem;
             }
 
             img {
