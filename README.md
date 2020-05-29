@@ -8,25 +8,15 @@
 
  [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org) 
 
+<div style="display:flex;justify-content:center;align-items:center;flex-direction:column;">
+    <a href="dashboard"><img src="./images/dashboard.gif" width="800" title="FVCproductions" alt="FVCproductions"></a>
+    <p>With SATCHEL you can keep track of news, notifications, grades, and network!</p>
+</div>
 
-[![](./images/dashboard.gif)]()
 
-- With SATCHEL you can keep track of news, notifications, grades, and network!
+<!-- ---
 
-> GIF Tools
-
-- Use <a href="http://recordit.co/" target="_blank">**Recordit**</a> to create quicks screencasts of your desktop and export them as `GIF`s.
-- For terminal sessions, there's <a href="https://github.com/chjj/ttystudio" target="_blank">**ttystudio**</a> which also supports exporting `GIF`s.
-
-![Recordit GIF](./images/dashboard.png)
-
-**ttystudio**
-
-![ttystudio GIF](https://raw.githubusercontent.com/chjj/ttystudio/master/img/example.gif)
-
----
-
-## Table of Contents (Optional)
+## Table of Contents 
 
 > If your `README` has a lot of info, section headers might be nice.
 
@@ -38,21 +28,6 @@
 - [Support](#support)
 - [License](#license)
 
-
----
-
-## Example (Optional)
-
-```javascript
-// code away!
-
-let generateProject = project => {
-  let code = [];
-  for (let js = 0; js < project.length; js++) {
-    code.push(js);
-  }
-};
-```
 
 ---
 
@@ -164,4 +139,4 @@ Reach out to me at one of the following places!
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2015 © <a href="http://fvcproductions.com" target="_blank">FVCproductions</a>.
+- Copyright 2015 © <a href="http://fvcproductions.com" target="_blank">FVCproductions</a>. -->
