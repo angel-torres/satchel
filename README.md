@@ -2,7 +2,7 @@
 
 <!-- [![FVCproductions](https://image.flaticon.com/icons/svg/717/717847.svg =200px)](http://fvcproductions.com) -->
 
-# SATCHEL
+# XATCHEL
 [xatchel.com](https://www.xatchel.com)
 
 > Plan and manage your student life.
@@ -11,7 +11,7 @@
 
 <div style="display:flex;justify-content:center;align-items:center;flex-direction:column;">
     <a href="dashboard"><img src="./images/dashboard.gif" width="800" title="FVCproductions" alt="FVCproductions"></a>
-    <p>With SATCHEL you can keep track of news, notifications, grades, and network!</p>
+    <p>With XATCHEL you can keep track of news, notifications, grades, and network!</p>
 </div>
 
 
