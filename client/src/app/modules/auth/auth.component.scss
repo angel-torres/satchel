@@ -6,10 +6,27 @@ mat-toolbar-row {
     display: flex;
     justify-content: space-between;
     align-items: space-between;
-}
 
-.nav-right-container {
-    display: flex;
-    justify-content: space-between;
-    width: 160px;
+    .icon-button {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        cursor: pointer;
+        padding: 5px;
+
+        &:hover {
+            background-color: whitesmoke;
+        }
+
+        img {
+            width: 50px;
+            margin-right: 10px;
+        }
+    }
+
+    .nav-right-container {
+        display: flex;
+        justify-content: space-between;
+        width: 160px;
+    }
 }

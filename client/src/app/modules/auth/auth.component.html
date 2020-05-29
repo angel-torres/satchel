@@ -1,13 +1,16 @@
 <mat-toolbar>
     <mat-toolbar-row>
-        <button mat-icon-button >
-        </button>
+        <div mat-button class="icon-button" routerLink="/dashboard">
+            <img src="https://image.flaticon.com/icons/svg/717/717847.svg" alt="xatchel">
+            <h2>Xatchel</h2>
+        </div>
 
-        <button mat-button routerLink="/dashboard"><h2>Xatchel</h2></button>
+        <span mat-icon-button></span> 
+
 
         <div class="nav-right-container">
-        <button routerLink="/signup" mat-raised-button color="primary">Sign Up</button>
-        <button routerLink="/login" mat-raised-button>Login</button>
+            <button routerLink="/signup" mat-raised-button color="primary">Sign Up</button>
+            <button routerLink="/login" mat-raised-button>Login</button>
         </div>
     </mat-toolbar-row>
 </mat-toolbar>
