@@ -27,7 +27,11 @@ mat-toolbar-row {
     .nav-right-container {
         display: flex;
         justify-content: space-between;
-        width: 160px;
+        width: 200px;
+
+        button {
+            margin: 10px;
+        }
     }
 }
 
