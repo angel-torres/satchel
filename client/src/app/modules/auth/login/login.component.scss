@@ -20,11 +20,14 @@
             flex-direction: column;
             justify-content: space-evenly;
             font-size: 1.6rem;
-            margin-bottom: 10px;
 
             input {
                 margin: 3px;
                 line-height: 1;
+            }
+
+            button {
+                margin-top: 10px;
             }
         }
     }
