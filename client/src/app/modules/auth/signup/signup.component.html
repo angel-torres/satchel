@@ -1,7 +1,7 @@
 <div class="container">
   <mat-card>
     <mat-card-title>Signup</mat-card-title>
-    <form class="auth-form">
+    <form class="auth-form" (submit)="handleSignup($event)">
       <mat-form-field class="">
         <mat-label>First Name</mat-label>
         <input matInput placeholder="First Name" value="">
