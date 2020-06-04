@@ -21,20 +21,30 @@ export class SignupComponent implements OnInit {
   handleSignup(event) {
     event.preventDefault();
 
-    if (this.password !== this.confirmPassword) {
-      this.errors.add("* Password and Confirm Password don't match")
-      return
-    }
 
-    const credentials = {
-      firstName: this.firstName,
-      lastName: this.lastName,
-      email: this.email,
-      password: this.password
-    }
+    if (this.firstName && this.lastName && this.email && this.password) {
+      if (this.password !== this.confirmPassword) {
+        this.errors.add("* Password and Confirm Password don't match")
+      }
 
-    this.authService.signup()
-    console.log("signing in!!");
+      const credentials = {
+        firstName: this.firstName,
+        lastName: this.lastName,
+        email: this.email,
+        password: this.password
+      }
+
+      this.authService.signup(credentials)
+      .subscribe((data) => {
+        console.log("we got", data);
+      }, (error) => {
+        console.log("error - ", error)
+        this.errors.add(error.error.message)
+      })
+
+    } else {
+      this.errors.add("* You must provide required inputs")
+    }
   }
 
 }
