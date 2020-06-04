@@ -9,7 +9,9 @@ import { AuthService } from '../auth.service';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private authService: AuthService, private router: Router) { }
+  constructor(
+    private authService: AuthService, 
+    private router: Router) { }
   email = "";
   password = "";
   errors = new Set();
@@ -18,26 +20,23 @@ export class LoginComponent implements OnInit {
 
   handleLogin(event) {
     event.preventDefault()
-      // "email": "robtoweee@mail.com",
-      // "password": "robmeifyoucanloser1999"
 
-      if(this.email.length && this.password.length) {
-        const credentials = {
-          "email": this.email,
-          "password": this.password
-        }
+    if(this.email.length && this.password.length) {
+      const credentials = {
+        "email": this.email,
+        "password": this.password
+      }
 
-        this.authService.login(credentials)
-        .subscribe((data) => {
-          this.errors.clear()
-          this.router.navigate(['/dashboard'])
-        }, (error) => {
-          console.log("error in login - ", error)
-          this.errors.add(error.error)
-        })
-      } else {
-        this.errors.add("* Please provide username and password")
-      } 
+      this.authService.login(credentials)
+      .subscribe((data) => {
+        this.errors.clear()
+        this.router.navigate(['/dashboard'])
+      }, (error) => {
+        this.errors.add(error.error)
+      })
+    } else {
+      this.errors.add("* Please provide username and password")
+    } 
 
   }
 
