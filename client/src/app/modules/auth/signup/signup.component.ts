@@ -38,10 +38,12 @@ export class SignupComponent implements OnInit {
         password: this.password
       }
 
+      console.log("credentials - ", credentials)
+
       this.authService.signup(credentials)
       .subscribe((data) => {
         this.errors.clear()
-        this.router.navigate(['/dashboard'])
+        this.router.navigate(['/login'])
       }, (error) => {
         this.errors.add(error.error.message)
       })
