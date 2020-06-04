@@ -9,12 +9,21 @@ import { AuthService } from '../auth.service';
 export class LoginComponent implements OnInit {
 
   constructor(private authService: AuthService) { }
+  email: string;
+  password: string;
 
   ngOnInit() { }
 
   handleLogin(event) {
     event.preventDefault()
-    console.log("login event - ", event)
+      // "email": "robtoweee@mail.com",
+      // "password": "robmeifyoucanloser1999"
+    const credentials = {
+      "email": this.email,
+      "password": this.password
+    }
+
+    this.authService.login(credentials)
   }
 
 }

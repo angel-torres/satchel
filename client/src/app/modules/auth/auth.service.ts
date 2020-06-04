@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
@@ -6,16 +7,13 @@ import { Injectable } from '@angular/core';
 })
 export class AuthService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private router: Router) { }
 
-  login() {
-    this.http.post('http://localhost:3500/auth/login', {
-      "firstName": "Rob",
-      "lastName": "Towe",
-      "email": "robtoweee@mail.com",
-      "password": "robmeifyoucanloser1999"
-  }).subscribe((data) => {
+  login(credentials) {
+    this.http.post('http://localhost:3500/auth/login', credentials)
+    .subscribe((data) => {
       console.log("we got", data);
+      this.router.navigate(['/dashboard'])
     })
   }
   

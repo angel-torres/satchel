@@ -4,12 +4,12 @@
     <form class="auth-form" (submit)="handleLogin($event)">
       <mat-form-field class="">
         <mat-label>Email</mat-label>
-        <input matInput placeholder="Email" value="">
+        <input matInput placeholder="Email" name="email" value="email" [(ngModel)]="email">
       </mat-form-field>
     
       <mat-form-field class="">
         <mat-label>Password</mat-label>
-        <input matInput placeholder="Password" value="">
+        <input matInput placeholder="Password" name="password" value="password" [(ngModel)]="password">
       </mat-form-field>
 
       <button mat-raised-button color="primary">Submit</button>
