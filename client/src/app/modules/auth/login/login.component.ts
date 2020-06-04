@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../auth.service';
 
@@ -8,9 +9,10 @@ import { AuthService } from '../auth.service';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private authService: AuthService) { }
-  email: string;
-  password: string;
+  constructor(private authService: AuthService, private router: Router) { }
+  email = "";
+  password = "";
+  errors = new Set();
 
   ngOnInit() { }
 
@@ -18,12 +20,25 @@ export class LoginComponent implements OnInit {
     event.preventDefault()
       // "email": "robtoweee@mail.com",
       // "password": "robmeifyoucanloser1999"
-    const credentials = {
-      "email": this.email,
-      "password": this.password
-    }
 
-    this.authService.login(credentials)
+      if(this.email.length && this.password.length) {
+        const credentials = {
+          "email": this.email,
+          "password": this.password
+        }
+
+        this.authService.login(credentials)
+        .subscribe((data) => {
+          this.errors.clear()
+          this.router.navigate(['/dashboard'])
+        }, (error) => {
+          console.log("error in login - ", error)
+          this.errors.add(error.error)
+        })
+      } else {
+        this.errors.add("* Please provide username and password")
+      } 
+
   }
 
 }

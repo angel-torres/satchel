@@ -10,11 +10,7 @@ export class AuthService {
   constructor(private http: HttpClient, private router: Router) { }
 
   login(credentials) {
-    this.http.post('http://localhost:3500/auth/login', credentials)
-    .subscribe((data) => {
-      console.log("we got", data);
-      this.router.navigate(['/dashboard'])
-    })
+    return this.http.post('http://localhost:3500/auth/login', credentials)
   }
   
 
