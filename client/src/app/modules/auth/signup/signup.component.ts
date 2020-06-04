@@ -10,11 +10,13 @@ export class SignupComponent implements OnInit {
 
   constructor(private authService: AuthService) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.authService.login()
+  }
 
   handleSignup(event) {
     event.preventDefault();
-    this.authService.login()
+    this.authService.signup()
     console.log("signing in!!");
   }
 

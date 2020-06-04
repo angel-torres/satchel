@@ -9,13 +9,29 @@ export class AuthService {
   constructor(private http: HttpClient) { }
 
   login() {
-    console.log("logging in...")
-    this.http.get('http://localhost:3500').subscribe((data) => {
+    this.http.post('http://localhost:3500/auth/login', {
+      "firstName": "Rob",
+      "lastName": "Towe",
+      "email": "robtoweee@mail.com",
+      "password": "robmeifyoucanloser1999"
+  }).subscribe((data) => {
       console.log("we got", data);
     })
   }
+  
 
   signup() {
-    console.log("signing up...")
+  //   this.http.post('http://localhost:3500/auth/signup', {
+  //     "firstName": "Rob",
+  //     "lastName": "Towe",
+  //     "email": "robtoweee@mail.com",
+  //     "password": "robmeifyoucanloser1999"
+  // }).subscribe((data) => {
+  //     console.log("we got", data);
+  //   })
+
+    this.http.get('http://localhost:3500/').subscribe((data) => {
+      console.log("data after get", data)
+    })
   }
 }
