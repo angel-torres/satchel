@@ -13,6 +13,7 @@ import { LoginComponent } from './modules/auth/login/login.component';
 import { SignupComponent } from './modules/auth/signup/signup.component';
 import { LandingComponent } from './modules/auth/landing/landing.component';
 import { AuthComponent } from './modules/auth/auth.component';
+import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [{
   path:'dashboard',
@@ -29,7 +30,8 @@ const routes: Routes = [{
     },{
       path: 'notifications',
       component: NotificationsComponent
-    }]
+    }],
+    canActivate: [AuthGuard]
   },{
     path: 'grades',
     component: GradesComponent
