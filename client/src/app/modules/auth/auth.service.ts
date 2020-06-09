@@ -10,11 +10,11 @@ export class AuthService {
   constructor(private http: HttpClient, private router: Router) { }
 
   login(credentials) {
-    return this.http.post('http://localhost:3500/auth/login', credentials)
+    return this.http.post('https://xatchel.herokuapp.com/auth/login', credentials)
   }
   
 
   signup(credentials) {
-    return this.http.post('http://localhost:3500/auth/signup', credentials)
+    return this.http.post('https://xatchel.herokuapp.com/auth/signup', credentials)
   }
 }
